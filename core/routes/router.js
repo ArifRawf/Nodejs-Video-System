@@ -47,7 +47,7 @@ module.exports = (req, res) => {
 	
 	
 	
-     if (req.url === `${videoPath.replace('/storage/emulated/0/aanewp','')}`) {
+     if (req.url === '/video/song.mp4') {
  const fileSize = fs.statSync(videoPath).size;
         
         const range = req.headers.range;
