@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+<link rel="stylesheet" type="text/css" href='/css/style.css'>
+
+<title>StreamBox - Watch Video</title>
+
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     NAVBAR
+========================= -->
+
+<header class="navbar">
+
+    <div class="logo">
+        StreamBox
+    </div>
+
+
+    <div class="search">
+
+        <input
+            type="text"
+            placeholder="Search videos..."
+        >
+
+        <button>
+            🔍
+        </button>
+
+    </div>
+
+
+    <div class="nav-user">
+
+        <span>Upload</span>
+
+        <div class="nav-avatar">
+            A
+        </div>
+
+    </div>
+
+</header>
+
+
+
+<!-- =========================
+     PAGE
+========================= -->
+
+<main class="page">
+
+
+<div class="layout">
+
+
+<!-- =========================
+     LEFT
+========================= -->
+
+<section>
+
+
+<!-- PLAYER -->
+
+<div class="player" id="player">
+
+    <video
+        id="video"
+        playsinline
+        preload="metadata"
+    >
+
+        <source
+            src="/video/song.mp4"
+            type="video/mp4"
+        >
+
+    </video>
+
+
+    <div class="controls">
+
+        <button
+            class="control-btn"
+            id="play">
+            ▶
+        </button>
+
+
+        <button
+            class="control-btn"
+            id="back">
+            ↶
+        </button>
+
+
+        <div
+            class="progress-area"
+            id="progressArea">
+
+            <div
+                class="progress"
+                id="progress">
+            </div>
+
+        </div>
+
+
+        <span
+            class="time"
+            id="time">
+            00:00 / 00:00
+        </span>
+
+
+        <button
+            class="control-btn"
+            id="fullscreen">
+            ⛶
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- TITLE -->
+
+<h1 class="video-title">
+
+    Amazing Night Journey Through The City 🌃
+
+</h1>
+
+
+<div class="video-meta">
+
+    128,452 views • Sep 15, 2026
+
+</div>
+
+
+
+<!-- CHANNEL -->
+
+<div class="channel">
+
+
+    <div class="channel-avatar">
+
+        N
+
+    </div>
+
+
+    <div class="channel-info">
+
+        <div class="channel-name">
+
+            NightVision
+
+        </div>
+
+        <div class="subscribers">
+
+            84.6K subscribers
+
+        </div>
+
+    </div>
+
+
+    <button
+        class="subscribe"
+        id="subscribe">
+
+        Subscribe
+
+    </button>
+
+</div>
+
+
+
+<!-- ACTIONS -->
+
+<div class="actions">
+
+    <button class="action">
+
+        👍 12K
+
+    </button>
+
+
+    <button class="action">
+
+        👎
+
+    </button>
+
+
+    <button class="action">
+
+        ↗ Share
+
+    </button>
+
+
+    <button class="action">
+
+        🔖 Save
+
+    </button>
+
+</div>
+
+
+
+<!-- DESCRIPTION -->
+
+<div class="description">
+
+    <div class="tags">
+
+        #NightLife #City #Travel #Video
+
+    </div>
+
+
+    <strong>
+        About this video
+    </strong>
+
+
+    <br><br>
+
+
+    Welcome to another cinematic journey through
+    the city at night.
+
+
+    <br><br>
+
+
+    In this video we explore the streets, lights,
+    buildings and hidden places of the city.
+
+
+    <br><br>
+
+
+    🎥 Camera: NightVision Studio<br>
+
+    🎵 Music: Original Soundtrack<br>
+
+    📍 Location: Downtown
+
+
+    <br><br>
+
+
+    Thanks for watching ❤️
+
+</div>
+
+
+
+<!-- COMMENTS -->
+
+<div class="comments">
+
+    <div class="comments-title">
+
+        386 Comments
+
+    </div>
+
+
+    <div class="comment">
+
+        <div class="comment-avatar">
+
+            J
+
+        </div>
+
+
+        <div>
+
+            <div class="comment-user">
+
+                John Smith
+
+            </div>
+
+            <div class="comment-text">
+
+                This video looks amazing!
+                The night shots are beautiful.
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="comment">
+
+        <div class="comment-avatar">
+
+            M
+
+        </div>
+
+
+        <div>
+
+            <div class="comment-user">
+
+                Michael
+
+            </div>
+
+            <div class="comment-text">
+
+                The editing is really clean.
+                Waiting for the next video 🔥
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="comment">
+
+        <div class="comment-avatar">
+
+            S
+
+        </div>
+
+
+        <div>
+
+            <div class="comment-user">
+
+                Sarah
+
+            </div>
+
+            <div class="comment-text">
+
+                Beautiful atmosphere ❤️
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+</section>
+
+
+
+<!-- =========================
+     RIGHT SIDEBAR
+========================= -->
+
+<aside>
+
+
+<div class="related-title">
+
+    Related Videos
+
+</div>
+
+
+<div class="related">
+
+
+<!-- VIDEO 1 -->
+
+<div class="related-card">
+
+    <div class="thumbnail"></div>
+
+
+    <div class="related-info">
+
+        <div class="related-name">
+
+            Beautiful City Lights At Midnight
+
+        </div>
+
+        <div class="related-channel">
+
+            UrbanLife
+
+        </div>
+
+        <div class="related-views">
+
+            42K views • 2 days ago
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- VIDEO 2 -->
+
+<div class="related-card">
+
+    <div class="thumbnail"></div>
+
+
+    <div class="related-info">
+
+        <div class="related-name">
+
+            Exploring The Hidden Streets
+
+        </div>
+
+        <div class="related-channel">
+
+            TravelWorld
+
+        </div>
+
+        <div class="related-views">
+
+            91K views • 5 days ago
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- VIDEO 3 -->
+
+<div class="related-card">
+
+    <div class="thumbnail"></div>
+
+
+    <div class="related-info">
+
+        <div class="related-name">
+
+            Rainy Night Walk
+
+        </div>
+
+        <div class="related-channel">
+
+            NightWalks
+
+        </div>
+
+        <div class="related-views">
+
+            18K views • 1 week ago
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- VIDEO 4 -->
+
+<div class="related-card">
+
+    <div class="thumbnail"></div>
+
+
+    <div class="related-info">
+
+        <div class="related-name">
+
+            Downtown After Dark
+
+        </div>
+
+        <div class="related-channel">
+
+            CityStories
+
+        </div>
+
+        <div class="related-views">
+
+            67K views • 2 weeks ago
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- VIDEO 5 -->
+
+<div class="related-card">
+
+    <div class="thumbnail"></div>
+
+
+    <div class="related-info">
+
+        <div class="related-name">
+
+            Walking Through The City
+
+        </div>
+
+        <div class="related-channel">
+
+            ExploreMore
+
+        </div>
+
+        <div class="related-views">
+
+            120K views • 3 weeks ago
+
+        </div>
+
+    </div>
+
+</div>
+
+
+</div>
+
+</aside>
+
+
+</div>
+
+</main>
+
+
+
+<script>
+
+/* =========================
+   VIDEO PLAYER
+========================= */
+
+const video =
+    document.getElementById("video");
+
+const play =
+    document.getElementById("play");
+
+const back =
+    document.getElementById("back");
+
+const progress =
+    document.getElementById("progress");
+
+const progressArea =
+    document.getElementById("progressArea");
+
+const time =
+    document.getElementById("time");
+
+const player =
+    document.getElementById("player");
+
+const fullscreen =
+    document.getElementById("fullscreen");
+
+
+
+/* PLAY */
+
+play.onclick = () => {
+
+    if (video.paused) {
+
+        video.play();
+
+        play.textContent = "❚❚";
+
+    } else {
+
+        video.pause();
+
+        play.textContent = "▶";
+
+    }
+
+};
+
+
+
+/* UPDATE PROGRESS */
+
+video.addEventListener(
+    "timeupdate",
+    () => {
+
+        const percent =
+            (video.currentTime /
+            video.duration) * 100;
+
+
+        progress.style.width =
+            percent + "%";
+
+
+        time.textContent =
+            formatTime(video.currentTime)
+            + " / "
+            + formatTime(video.duration);
+
+    }
+);
+
+
+
+/* SEEK */
+
+progressArea.onclick = (e) => {
+
+    const width =
+        progressArea.clientWidth;
+
+
+    const click =
+        e.offsetX;
+
+
+    video.currentTime =
+        (click / width) *
+        video.duration;
+
+};
+
+
+
+/* BACK 10 SEC */
+
+back.onclick = () => {
+
+    video.currentTime -= 10;
+
+};
+
+
+
+/* FULLSCREEN */
+
+fullscreen.onclick = () => {
+
+    if (!document.fullscreenElement) {
+
+        player.requestFullscreen();
+
+    } else {
+
+        document.exitFullscreen();
+
+    }
+
+};
+
+
+
+/* FORMAT TIME */
+
+function formatTime(seconds) {
+
+    if (isNaN(seconds)) {
+
+        return "00:00";
+
+    }
+
+
+    const min =
+        Math.floor(seconds / 60);
+
+
+    const sec =
+        Math.floor(seconds % 60);
+
+
+    return String(min).padStart(2, "0")
+        + ":"
+        + String(sec).padStart(2, "0");
+
+}
+
+
+
+/* SUBSCRIBE */
+
+document
+.getElementById("subscribe")
+.onclick = function () {
+
+    if (
+        this.textContent.trim()
+        === "Subscribe"
+    ) {
+
+        this.textContent =
+            "Subscribed ✓";
+
+    } else {
+
+        this.textContent =
+            "Subscribe";
+
+    }
+
+};
+
+</script>
+
+
+</body>
+
+</html>

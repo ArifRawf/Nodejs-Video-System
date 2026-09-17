@@ -1,17 +1,14 @@
 const http = require('http');
-const fs = require('fs');
+const router = require('./core/routes/router');
+const port = process.env.PORT || 3000;
 
-function sendJson(res,s,c) {
-	res.writeHead(c,{'Content-Type':'application/json'});
-	res.end(JSON.stringify(s));
-	}
 	
 const server = http.createServer((req, res) => {
-	res.end(process.env.arman);
-	return;
+	//Starting router
+	if (router(req,res)) return;
 	}
 );
 
-server.listen(3001,() => {
-	console.log('server running...');
+server.listen(port,() => {
+	console.log('server running on port ' + port);
 	});
